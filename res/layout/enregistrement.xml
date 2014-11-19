@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dev.devoir1.EnregistrementActivity" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="48dp"
+        android:text="Nom" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Enregistrement"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/nonlog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/non"
+        android:layout_marginTop="42dp"
+        android:text="passWord" />
+
+    <EditText
+        android:id="@+id/pass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/nonlog"
+        android:layout_alignBottom="@+id/nonlog"
+        android:layout_alignLeft="@+id/textView2"
+        android:ems="10"
+        android:inputType="textPassword" 
+        android:hint="passWord"
+        />
+
+    <EditText
+        android:id="@+id/non"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView1"
+        android:layout_alignBottom="@+id/textView1"
+        android:layout_alignLeft="@+id/textView2"
+        android:ems="10"
+        android:hint="nom" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/nonlog"
+        android:layout_below="@+id/pass"
+        android:layout_marginTop="50dp"
+        android:text="confirmer le password" />
+
+    <EditText
+        android:id="@+id/conf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pass"
+        android:layout_alignTop="@+id/textView4"
+        android:ems="10"
+        android:hint="confirmer "
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/ret"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/enreg"
+        android:layout_alignBottom="@+id/enreg"
+        android:layout_alignRight="@+id/conf"
+        android:text="Return" />
+
+    <Button
+        android:id="@+id/enreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView4"
+        android:layout_marginTop="49dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:text="envoyer" />
+
+</RelativeLayout>
